@@ -2,8 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="first_activity">#E00070</color>
-    <color name="second_activity">#005CFF</color>
-    <color name="third_activity">#FF4500</color>
+    <color name="first_activity">#F7B3D1</color>   <!-- светло-розовый -->
+    <color name="second_activity">#B3CFFF</color>  <!-- светло-голубой -->
+    <color name="third_activity">#FFB380</color>   <!-- светло-оранжевый -->
 
 </resources>

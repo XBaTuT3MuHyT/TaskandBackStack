@@ -26,7 +26,11 @@ class ActivityB : AppCompatActivity() {
         Log.d("TaskInfo", "${this::class.simpleName} started in taskId = $taskId")
 
         val root = findViewById<View>(R.id.main)
-        root.setBackgroundColor(ContextCompat.getColor(this, R.color.second_activity))
+        val color = intent.getIntExtra(
+            "color",
+            ContextCompat.getColor(this, R.color.second_activity)
+        )
+        root.setBackgroundColor(color)
 
         val button = findViewById<Button>(R.id.activity_b_button)
 

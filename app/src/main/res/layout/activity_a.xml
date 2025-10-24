@@ -11,14 +11,17 @@
         android:id="@+id/activity_a_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
         android:text="ActivityB"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
+        app:layout_constraintVertical_bias="0.95" />
 
     <com.google.android.material.appbar.MaterialToolbar
-        android:layout_width="413dp"
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
         android:layout_height="36dp"
         android:background="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,5 +30,47 @@
         app:title="ActivityA"
         app:titleTextAppearance="@style/Toolbar.TitleText"
         app:titleTextColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="198dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:inputType="textVisiblePassword"
+        android:maxLength="9"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialToolbar"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <Button
+        android:id="@+id/button_color"
+        android:layout_width="147dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:text="change color"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+
+    <ImageButton
+        android:id="@+id/btn_generate_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/button_color"
+        app:layout_constraintStart_toEndOf="@+id/button_color"
+        app:layout_constraintTop_toTopOf="@+id/button_color"
+        android:background="@drawable/rounded_edittext"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        app:srcCompat="@android:drawable/ic_popup_sync" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
