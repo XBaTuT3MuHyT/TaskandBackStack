@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.TaskAndBackStack" parent="Base.Theme.TaskAndBackStack" />
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">22sp</item>     <!-- ✅ размер текста -->
+        <item name="android:textStyle">bold</item>    <!-- жирный -->
+    </style>
+
 </resources>

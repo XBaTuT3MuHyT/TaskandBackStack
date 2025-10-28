@@ -12,8 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskAndBackStack">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ActivityC"
+            android:exported="false"
+            android:taskAffinity="com.example.taskandbackstack.ActivityB"/>
+        <activity
+            android:name=".ActivityB"
+            android:exported="false"
+            android:taskAffinity="com.example.taskandbackstack.ActivityB"/>
+        <activity
+            android:name=".ActivityA"
+            android:exported="true"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
